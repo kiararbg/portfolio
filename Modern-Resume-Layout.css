@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "header header "
+    "sidebar main ";
+    gap: 0px;
+    width: 1200px;
+    padding: 20px;
+    margin-left:10em ;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(31, 44, 67);
+    color: white;
+    padding: 35px;
+}
+
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    color: white;
+    background-color: rgb(57, 74, 107);
+    padding: 25px;
+
+}
+
+.main{
+    grid-area: main;
+    background-color: white;
+    padding: 45px;
+}
+
+.date{
+    font-style: italic;
+    color: #6b6b6b;
+}
+
+main h2{
+    padding-bottom: 5px;
+    color: rgb(27, 46, 88);
+}
+
+.main, h3{
+    padding-top: 20px;
+}
+
+.main > hr{
+    border: 1px solid rgb(134, 174, 169);
+}
+
+.sidebar, p{
+    padding-top: 10px;
+}
+
+aside h2{
+    padding-top: 15px;
+}
+
+p, p{
+    padding-top: 0;
+}
+
+
+
+

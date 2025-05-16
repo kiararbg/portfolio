@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="Account.css">
+</head>
+<body>
+    <div class="form-container">
+    <header class="form-header">
+    <h1>Create Account</h1>
+    <h4>Fill in details to get started</h4>
+    </header>
+    <form action="">
+        <div class="form">
+            <!--Full name-->
+        <label for="fname" class="required">Full Name</label>
+        <br>
+        <input type="text" id="fname" name="fname" placeholder="John Doe" >
+        </div>
+            <!--End of full name(in divs instead of using br)-->
+
+            <!--email-->
+        <div class="form">
+        <label for="email" class="required">Email Adress</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+            <!--End of email-->
+
+            <!--Password-->
+        <div class="form">
+        <label id="password" class="required">Password</label>
+        <br>
+        <input type="password" id="password" name="password" required min="8">
+        <p class="password">Must be at least 8 characters long</p>
+        </div>
+            <!--End of password-->
+
+            <!--Dropdown-->
+            <div class="form">
+        <label for="dropdown" class="required">Role</label>
+        <br>
+        <select name="role">
+            <option value="Pick a Role">Select a Role</option>
+            <option value="Cashier">Cashier</option>
+            <option value="Waiter">Waiter</option>
+        </select>
+        </div>
+            <!--End of dropdown-->
+
+            <!--Bio-->
+        <label for="text" class="required">Bio</label>
+        <br>
+        <textarea name="Bio" id="Bio" cols="60" rows="5" placeholder="Tell us about yourself"></textarea>
+        <p>Keep it short & sweet</p>
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="required">I agree to Terms and Conditions</label>
+        <br>
+        <button>Create Account</button>
+        </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiara's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body{
+            background-color: #ffffff;
+        }
+
+        .contact-info, .form {
+            background-color: rgb(39, 39, 41);
+            padding: 2rem;
+            color: white;
+            height: 40em;
+            box-shadow:  5px 5px 5px 5px #e6e2e2;
+            
+        }
+
+        button{
+            padding: 10px 5px 10px 5px;
+            background-color: rgb(246, 242, 242);
+            color: black;
+            font-size: 15px;
+
+            
+        }
+        
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1200px;
+            box-sizing: border-box;
+            gap: 25px;
+            align-content:center ;
+            margin: 2rem auto;
+        }
+
+        .answer {
+            margin-bottom: 15px;
+            width: 30em;
+        }
+
+        input{
+            width: 30em;
+            height: 45px;
+        }
+
+        input, textarea{
+            border:3px solid rgb(24, 23, 23) ;
+        }
+
+        .contact-info>p{
+            margin-bottom: 15px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Kiara Flores</div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section>
+    <div class="contact-info">
+        <h1>Contact</h1>
+        <p><b>Email: </b>kflore654@west-mec.org</p>
+        <p><b>Phone: </b>+1(623)-238-8909</p>
+        <p><b>Location: </b>West-Mec Centeral Campus, AZ</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212611.8498200121!2d-112.46214349233236!3d33.629682266024965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1734033464023!5m2!1sen!2sus" 
+        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+            <p><b>Github: </b><a href="github.com/kiararbg"></a>github.com/kiararbg</p>
+            
+        </div>
+
+        <div class="form">
+            <h1>Send Me a Message</h1>
+        <form>
+            <div class="answer">
+             <label for="name">Name</label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            </div>
+           
+            <div class="input">
+            
+            </div>
+
+            <div class="answer">
+            <label for="email">Email</label>
+            <br> 
+            <input type="text" id="email" required>
+            <br>
+            </div>
+
+            <div class="answer"><label for="Subject">Subject</label>
+            <br><input type="text" id="Subject">
+            <br>
+            </div>
+           
+            <div class="answer">
+            <label for="Message">Message</label>
+            <br>
+            <textarea name="Message" id="Message" cols="60" rows="10" placeholder="Type your message"></textarea>
+            <br>
+            </div>
+            
+            
+            
+            <button>Send Message</button>
+        </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Kiara Flores. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
